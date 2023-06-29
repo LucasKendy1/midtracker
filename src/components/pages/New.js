@@ -14,12 +14,12 @@ function New(){
     
     const [categorias, setCategorias] = useState([])
    
-    const [selectValue, setSelectValue] = useState(1);
+    const [selectValue, setSelectValue] = useState(0);
 
     const navigate = useNavigate()
 
-    const handleSelecao = (indice) => {
-        setSelectValue(indice)
+    function handleSelect(e){
+        setSelectValue(e.target.value)
     }
 
     function createPost(midia){
@@ -59,7 +59,7 @@ function New(){
             <h1>Add nova midia</h1>
             <p>Preencha o formulario abaixo para add sua midia</p>
             
-            <Select name="categoria" text="Selecione a categoria" options={categorias} onSelecao = {handleSelecao}/>
+            <Select name="categoria" text="Selecione a categoria" options={categorias} handleOnChange={handleSelect} value={categorias.name}/>
             
             {selectValue == 1 && (
                <FilmesForm handleSubmit={createPost}/> 
@@ -77,7 +77,7 @@ function New(){
                <LivroForm />
             )}
 
-            <SubmitButton text="Enviar"/>
+            {/* <SubmitButton text="Enviar"/> */}
         </section>
     )
 }

@@ -6,7 +6,6 @@ import SubmitButton from '../form/SubmitButton'
 function FilmesForm(handleSubmit, midiaData){
     const [status, setStatus] = useState([])
     const [midia, setMidia] = useState (midiaData || {})
-    const [selectValue, setSelectValue] = useState('');
 
     useEffect(() => {
         fetch("http://localhost:5000/status",{
@@ -42,10 +41,6 @@ function FilmesForm(handleSubmit, midiaData){
         })
     }
 
-    const handleSelecao = (indice) => {
-        setSelectValue(indice)
-    }
-
     return(
         <form onSubmit={submit}>
             <Input type="text" text="Titulo" name="titulo" placeholder="Insira o Titulo do filme" handleOnChange={handleChange}/>
@@ -54,7 +49,7 @@ function FilmesForm(handleSubmit, midiaData){
 
             <Input type="link" text="Link" name="link" placeholder="Insira o link do filme" handleOnChange={handleChange}/>
 
-            <Select name="Status" text="Selecione o status" options={status} handleOnChange={handleSelect} onSelecao = {handleSelecao} value={midia.status ? midia.status.id : ''}/>
+            <Select name="Status" text="Selecione o status" options={status} handleOnChange={handleSelect} value={midia.status ? midia.status.id : ''}/>
 
             <SubmitButton text="Enviar"/>
         </form>
