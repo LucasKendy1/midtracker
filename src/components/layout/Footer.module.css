@@ -1,0 +1,33 @@
+.footer_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 10vh;
+    background-color: #0e0e0e;
+    /* position: fixed; */
+    bottom: 0;
+}
+.lista{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.item_lista{
+    margin: 0 0.5em;
+    font-size: 1.5em;
+}
+
+.item_lista:hover{
+    color: #2b59c3;
+    cursor: pointer;
+}
+
+.nome:hover{
+    color: #2b59c3;
+    cursor: pointer;
+}

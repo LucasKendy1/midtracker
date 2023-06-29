@@ -1,0 +1,85 @@
+import style from './New.module.css'
+import Select from '../form/Select'
+import SubmitButton from '../form/SubmitButton'
+import {useEffect, useState} from 'react'
+import {useNavigate} from 'react-router-dom'
+
+import FilmesForm from '../form/FilmesForm'
+import MangaForm from '../form/MangaForm'
+import SerieForm from '../form/SerieForm'
+import AnimeForm from '../form/AnimeForm'
+import LivroForm from '../form/LivroForm'
+
+function New(){
+    
+    const [categorias, setCategorias] = useState([])
+   
+    const [selectValue, setSelectValue] = useState(1);
+
+    const navigate = useNavigate()
+
+    const handleSelecao = (indice) => {
+        setSelectValue(indice)
+    }
+
+    function createPost(midia){
+        fetch("http//localhost:5000/midias",{
+            method: 'POST',
+            headers:{
+                'Content-type': 'application/json',
+            },    
+            body: JSON.stringify(midia)
+        }).then((
+            resp => resp.json())
+        .then((data) => {
+            console.log(data)
+            //redirect
+        })
+        ).catch(err => console.log(err))
+    }
+
+    useEffect(() => {
+        fetch("http://localhost:5000/categorias",{
+        method: "GET",
+        headers:{
+            'Content-Type': 'application/json',
+        },
+        })
+        .then((resp) => resp.json())
+        .then((data) => {
+            setCategorias(data)
+        })
+        .catch((err) => console.log(err))
+
+    }, [])
+
+    return(
+        
+        <section className={style.new_container}>
+            <h1>Add nova midia</h1>
+            <p>Preencha o formulario abaixo para add sua midia</p>
+            
+            <Select name="categoria" text="Selecione a categoria" options={categorias} onSelecao = {handleSelecao}/>
+            
+            {selectValue == 1 && (
+               <FilmesForm handleSubmit={createPost}/> 
+            )}
+            {selectValue == 2 && (
+               <AnimeForm />
+            )}
+            {selectValue == 3 && (
+               <SerieForm />
+            )}
+            {selectValue == 4 && (
+               <MangaForm />
+            )}
+            {selectValue == 5 && (
+               <LivroForm />
+            )}
+
+            <SubmitButton text="Enviar"/>
+        </section>
+    )
+}
+
+export default New

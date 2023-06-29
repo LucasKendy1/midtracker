@@ -1,0 +1,9 @@
+.new_container{
+    width: 100%;
+    min-height: 75vh;
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

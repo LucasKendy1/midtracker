@@ -1,0 +1,15 @@
+.container_header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 15vh;
+    background-color: #0e0e0e;
+}
+.icone{
+    font-size: 2em;
+}
+
+.icone:hover{
+    cursor: pointer;
+}

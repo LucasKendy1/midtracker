@@ -1,0 +1,24 @@
+.navAberta{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background: #202020;
+    position: absolute;
+}
+a{
+    text-decoration: none;
+    color: #FFFFFA;
+    transition: .7s ease-out;
+}
+a:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 35px;
+    border-radius: 30px;
+    background: #A31621;
+}

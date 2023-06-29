@@ -1,0 +1,49 @@
+{
+  "users":[
+    {
+      "id": 1,
+      "name": "Lucas Kendy Urano"
+    },
+    {
+      "id": 2,
+      "name": "Clara Maria Lima"
+    }
+  ],
+  "midias":[],
+  "categorias":[
+    {
+      "id": 1,
+      "name": "Filmes"
+    },
+    {
+      "id": 2,
+      "name": "Animes"
+    },
+    {
+      "id": 3,
+      "name": "Series"
+    },
+    {
+      "id": 4,
+      "name": "Mangás"
+    },
+    {
+      "id": 5,
+      "name": "Livros"
+    }
+  ],
+  "status":[
+    {
+      "id": 1,
+      "name": "Já vi"
+    },
+    {
+      "id": 2,
+      "name": "Estou vendo"
+    },
+    {
+      "id": 3,
+      "name": "Ainda quero ver"
+    }
+  ]
+}
