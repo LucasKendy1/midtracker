@@ -3,11 +3,18 @@ import Select from './Select'
 import {useEffect, useState} from 'react'
 import SubmitButton from '../form/SubmitButton'
 
-function FilmesForm(handleSubmit, midiaData){
+function FilmesForm({handleSubmit, midiaData}){
     const [status, setStatus] = useState([])
+<<<<<<< Updated upstream
     const [midia, setMidia] = useState (midiaData || {})
     const [selectValue, setSelectValue] = useState('');
 
+=======
+    const [midia, setMidia] = useState (midiaData || {
+        categoria: 'Filme'
+    })
+    
+>>>>>>> Stashed changes
     useEffect(() => {
         fetch("http://localhost:5000/status",{
         method: "GET",
@@ -23,10 +30,11 @@ function FilmesForm(handleSubmit, midiaData){
 
     }, [])
 
+  
     const submit = (e) => {
         e.preventDefault()
         console.log(midia)
-        // handleSubmit(midia)
+        handleSubmit(midia)
     }
 
     function handleChange(e){
@@ -48,6 +56,8 @@ function FilmesForm(handleSubmit, midiaData){
 
     return(
         <form onSubmit={submit}>
+            <Input type="text" text="Subcategoria" name="subcategoria" placeholder="Ex: Terror" handleOnChange={handleChange}/>
+
             <Input type="text" text="Titulo" name="titulo" placeholder="Insira o Titulo do filme" handleOnChange={handleChange}/>
             
             <Input type="time" text="Hora/Min" name="hora" handleOnChange={handleChange}/>

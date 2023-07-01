@@ -1,0 +1,70 @@
+.Anime{
+    background-color: #f7adc3;
+    border-radius: 10px;
+    width: 260px;
+    height: 470px;
+    margin-bottom: 2em;
+    margin-right: 1em;
+    margin-left: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Filme{
+    background-color: #FE7F2D;
+    border-radius: 10px;
+    width: 260px;
+    height: 470px;
+    margin-bottom: 2em;
+    margin-right: 1em;
+    margin-left: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Manga{
+    background-color: #A13D63;
+    border-radius: 10px;
+    width: 260px;
+    height: 470px;
+    margin-bottom: 2em;
+    margin-right: 1em;
+    margin-left: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Livro{
+    background-color: #3ABEFF;
+    border-radius: 10px;
+    width: 260px;
+    height: 470px;
+    margin-bottom: 2em;
+    margin-right: 1em;
+    margin-left: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Serie{
+    background-color: #a6c98c;
+    border-radius: 10px;
+    width: 260px;
+    height: 470px;
+    margin-bottom: 2em;
+    margin-right: 1em;
+    margin-left: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

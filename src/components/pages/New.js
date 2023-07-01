@@ -23,19 +23,20 @@ function New(){
     }
 
     function createPost(midia){
-        fetch("http//localhost:5000/midias",{
+        fetch("http://localhost:5000/midias",{
             method: 'POST',
             headers:{
                 'Content-type': 'application/json',
             },    
-            body: JSON.stringify(midia)
-        }).then((
-            resp => resp.json())
+            body: JSON.stringify(midia),
+        })
+        .then((resp) => resp.json())
         .then((data) => {
             console.log(data)
-            //redirect
+
+            navigate('/', { state: { message: 'Midia criada com sucesso!'}})
         })
-        ).catch(err => console.log(err))
+        .catch((err) => console.log(err))
     }
 
     useEffect(() => {
@@ -65,16 +66,16 @@ function New(){
                <FilmesForm handleSubmit={createPost}/> 
             )}
             {selectValue == 2 && (
-               <AnimeForm />
+               <AnimeForm handleSubmit={createPost}/>
             )}
             {selectValue == 3 && (
-               <SerieForm />
+               <SerieForm handleSubmit={createPost}/>
             )}
             {selectValue == 4 && (
-               <MangaForm />
+               <MangaForm handleSubmit={createPost}/>
             )}
             {selectValue == 5 && (
-               <LivroForm />
+               <LivroForm handleSubmit={createPost}/>
             )}
 
             <SubmitButton text="Enviar"/>
