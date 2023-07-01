@@ -5,16 +5,9 @@ import SubmitButton from '../form/SubmitButton'
 
 function FilmesForm({handleSubmit, midiaData}){
     const [status, setStatus] = useState([])
-<<<<<<< Updated upstream
     const [midia, setMidia] = useState (midiaData || {})
     const [selectValue, setSelectValue] = useState('');
 
-=======
-    const [midia, setMidia] = useState (midiaData || {
-        categoria: 'Filme'
-    })
-    
->>>>>>> Stashed changes
     useEffect(() => {
         fetch("http://localhost:5000/status",{
         method: "GET",
