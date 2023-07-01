@@ -23,13 +23,44 @@ function Cards({ id, categoria, subcategoria, temporada, episodio,titulo, hora, 
                 <div>
                     <h1>{titulo}</h1>
                     <p>Subcategoria: {subcategoria}</p>
-                    <p>Episódio: {episodio}</p>
-                    <p>Min: {min}</p>
+                    <p>Hora: {hora}</p>
                     <p>Link: {link}</p>
+                    <p>Status: {status}</p>
                     <section>{categoria}</section>
                 </div>
             )}
-            
+            {category=='Manga' &&(
+                <div>
+                    <h1>{titulo}</h1>
+                    <p>Capitulo: {capitulo}</p>
+                    <p>Scan: {scan}</p>
+                    <p>Link: {link}</p>
+                    <p>Status: {status}</p>
+                    <section>{categoria}</section>
+                </div>
+            )}
+            {category=='Serie' &&(
+                <div>
+                    <h1>{titulo}</h1>
+                    <p>Temporada: {temporada}</p>
+                    <p>Episódio: {episodio}</p>
+                    <p>Hora: {hora}</p>
+                    <p>Link: {link}</p>
+                    <p>Status: {status}</p>
+                    <section>{categoria}</section>
+                </div>
+            )}
+            {category=='Livro' &&(
+                <div>
+                    <h1>{titulo}</h1>
+                    <p>Capitulo: {capitulo}</p>
+                    <p>Página: {pagina}</p>
+                    <p>Total de páginas: {totpagina}</p>
+                    <p>Link: {link}</p>
+                    <p>Status: {status}</p>
+                    <section>{categoria}</section>
+                </div>
+            )}
         </div>
     )
 }

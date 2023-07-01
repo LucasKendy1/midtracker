@@ -201,6 +201,19 @@
       "min": "12:32",
       "link": "meusanimes/bocchitherock",
       "id": 33
+    },
+    {
+      "categoria": "Serie",
+      "titulo": "Stranger Things",
+      "temporada": "4",
+      "episodio": "7",
+      "hora": "12:23",
+      "link": "123213123",
+      "status": {
+        "id": "2",
+        "name": "Estou vendo"
+      },
+      "id": 34
     }
   ],
   "categorias": [

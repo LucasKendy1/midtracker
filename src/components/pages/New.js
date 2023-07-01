@@ -1,6 +1,5 @@
 import style from './New.module.css'
 import Select from '../form/Select'
-import SubmitButton from '../form/SubmitButton'
 import {useEffect, useState} from 'react'
 import {useNavigate} from 'react-router-dom'
 
@@ -14,7 +13,7 @@ function New(){
     
     const [categorias, setCategorias] = useState([])
    
-    const [selectValue, setSelectValue] = useState(0);
+    const [selectValue, setSelectValue] = useState(1);
 
     const navigate = useNavigate()
 
@@ -78,7 +77,6 @@ function New(){
                <LivroForm handleSubmit={createPost}/>
             )}
 
-            {/* <SubmitButton text="Enviar"/> */}
         </section>
     )
 }
