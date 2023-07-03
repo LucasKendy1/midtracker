@@ -5,7 +5,9 @@ import SubmitButton from '../form/SubmitButton'
 
 function FilmesForm({handleSubmit, midiaData}){
     const [status, setStatus] = useState([])
-    const [midia, setMidia] = useState (midiaData || {})
+    const [midia, setMidia] = useState (midiaData || {
+        categoria: 'Filme'
+    })
 
     useEffect(() => {
         fetch("http://localhost:5000/status",{
@@ -51,6 +53,8 @@ function FilmesForm({handleSubmit, midiaData}){
             <Input type="time" text="Hora/Min" name="hora" handleOnChange={handleChange}/>
 
             <Input type="link" text="Link" name="link" placeholder="Insira o link do filme" handleOnChange={handleChange}/>
+
+            <Input type="text" text="Link da Imagem do Banner" name="imagem" placeholder="Insira uma imagem da midia" handleOnChange={handleChange}/>
 
             <Select name="Status" text="Selecione o status" options={status} handleOnChange={handleSelect} value={midia.status ? midia.status.id : ''}/>
 

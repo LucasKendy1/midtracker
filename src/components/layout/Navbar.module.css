@@ -8,12 +8,12 @@
     background: #202020;
     position: absolute;
 }
-a{
+.link{
     text-decoration: none;
     color: #FFFFFA;
     transition: .7s ease-out;
 }
-a:hover{
+.link:hover{
     display: flex;
     justify-content: center;
     align-items: center;

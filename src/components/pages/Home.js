@@ -38,8 +38,8 @@ function Home(){
             <LinkButton to={"/new"} text="Add Midia + "/>
             <br />
             <div className={styles.render_container}>
-                {midias.length > 0 &&
-                    midias.map((midia) => 
+                {midias.length > 0 &&(
+                    midias.map((midia) =>
                     <Cards 
                         titulo={midia.titulo} 
                         temporada={midia.temporada}
@@ -49,9 +49,15 @@ function Home(){
                         link={midia.link}
                         // status={midia.status.name}
                         categoria={midia.categoria}
+                        hora={midia.hora}
+                        capitulo={midia.capitulo}
+                        scan={midia.scan}
+                        pagina={midia.pagina}
+                        totpagina={midia.totpagina}
+                        imagem={midia.imagem}
                         key={midia.id}
-                    />   
-                )}
+                    />
+                ))}
             </div>
         </section>
     )
