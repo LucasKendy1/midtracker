@@ -8,6 +8,8 @@
     background-color: #2b59c3;
     font-weight: 500;
     margin: 2em;
+    text-decoration: none;
+    color: white;
 }
 .button:hover{
     background-color: #2b59c3;

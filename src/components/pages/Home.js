@@ -35,7 +35,9 @@ function Home(){
             {message && <Mensagem msg={message} type="success"/>}
             <h1>Bem vindo ao <span>MidTracker</span></h1>
             <p>Cadastre seus animes, series, filmes e muito mais!</p>
+
             <LinkButton to={"/new"} text="Add Midia + "/>
+
             <br />
             <div className={styles.render_container}>
                 {midias.length > 0 &&(
@@ -47,7 +49,7 @@ function Home(){
                         episodio={midia.episodio}
                         min={midia.min}
                         link={midia.link}
-                        // status={midia.status.name}
+                        status={midia.status.name}
                         categoria={midia.categoria}
                         hora={midia.hora}
                         capitulo={midia.capitulo}

@@ -11,33 +11,40 @@
   ],
   "midias": [
     {
-      "subcategoria": "Ficção cientifica",
-      "titulo": "Harry Potter e a Pedra Filosofal",
-      "hora": "00:00",
-      "link": "https://pobreflix.org/filmes/harry-potter-e-a-pedra-filosofal/",
+      "categoria": "Filme",
+      "subcategoria": "Ficção",
+      "titulo": "Animais Fantásticos: Os Segredos de Dumbledore",
+      "hora": "02:22",
+      "link": "https://amazflix.biz/filmes/animais-fantasticos-os-segredos-de-dumbledore/",
+      "imagem": "https://s2.glbimg.com/Ts4sEmZsMfd-v5gDh4ev5IxXOZU=/e.glbimg.com/og/ed/f/original/2022/02/22/fmnz6aexiau47m8.jpg",
       "status": {
-        "id": "1",
-        "name": "Já vi"
+        "id": "3",
+        "name": "Ainda quero ver"
       },
       "id": 1
     },
     {
-      "subcategoria": "Ficção cientifica",
-      "titulo": "Harry Potter e a Camara Secreta",
-      "hora": "00:00",
-      "link": "https://pobreflix.mobi/movies/harry-potter-e-a-camara-secreta-gratis-3/",
+      "categoria": "Anime",
+      "titulo": "Seishun Buta Yarō wa Bunny Girl Senpai no Yume o Minai",
+      "temporada": "1",
+      "episodio": "1",
+      "min": "00:00",
+      "link": "https://meusanimesbr.com/anime/seishun-buta-yarou-wa-bunny-girl-senpai-no-yume-wo-minai-temporada-1/",
+      "imagem": "https://meusanimesbr.com/wp-content/uploads/2023/04/bcd944b1f8e2f65e0de1efdbfd3576d3.jpg",
       "status": {
-        "id": "2",
-        "name": "Estou vendo"
+        "id": "3",
+        "name": "Ainda quero ver"
       },
       "id": 2
     },
     {
-      "categoria": "Filme",
-      "subcategoria": "Ficção Científica",
-      "titulo": "Harry Potter e o Cálice de Fogo",
-      "hora": "02:37",
-      "link": "https://amazflix.biz/filmes/harry-potter-e-o-calice-de-fogo/",
+      "categoria": "Serie",
+      "titulo": "The Last Of Us",
+      "link": "https://amazflix.biz/series/the-last-of-us/",
+      "temporada": "1",
+      "episodio": "1",
+      "hora": "00:00",
+      "imagem": "https://image.tmdb.org/t/p/w185/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg",
       "status": {
         "id": "3",
         "name": "Ainda quero ver"
@@ -45,65 +52,32 @@
       "id": 3
     },
     {
-      "categoria": "Anime",
-      "titulo": "Oshi no Ko",
-      "temporada": "1",
-      "episodio": "11",
-      "min": "00:00",
-      "link": "https://meusanimesbr.com/anime/oshi-no-ko-temporada-1/",
-      "id": 4
-    },
-    {
-      "categoria": "Serie",
-      "titulo": "The Last Of Us",
-      "temporada": "1",
-      "episodio": "4",
-      "hora": "00:00",
-      "link": "https://amazflix.biz/series/the-last-of-us/",
+      "categoria": "Manga",
+      "titulo": "For my abandoned love",
+      "capitulo": "50",
+      "temporada": "2",
+      "scan": "Maid scan",
+      "link": "https://mangalivre.net/ler/for-my-abandoned-love/online/416877/30#/!page1",
+      "imagem": "https://cerisescans.com/wp-content/uploads/2023/05/Fthi52PWwAEExw6-193x278.jpg",
       "status": {
         "id": "2",
         "name": "Estou vendo"
       },
-      "id": 5
-    },
-    {
-      "categoria": "Manga",
-      "titulo": "BJ Alex",
-      "capitulo": "91",
-      "temporada": "1",
-      "scan": "YaribuScan",
-      "link": "https://blmanhwa.club/comic/alex-bj/capitulo90/",
-      "status": {
-        "id": "1",
-        "name": "Já vi"
-      },
-      "id": 6
+      "id": 4
     },
     {
       "categoria": "Livro",
-      "titulo": "A mágica da arrumação: A arte japonesa de colocar ordem na sua casa e na sua vida",
+      "titulo": "Neuromancer: 1",
       "capitulo": "1",
-      "pagina": "137",
-      "totpagina": "137",
-      "link": "https://www.google.com/search?sxsrf=AB5stBiJz04PJmXl52uFs3fxyqxcr_eXHg:1688410636859&q=A+M%C3%A1gica+da+Arruma%C3%A7%C3%A3o+-+A+Arte+Japonesa+de+Colocar+Ordem+na+Sua+Casa+e+na+Sua+Vida&stick=H4sIAAAAAAAAAONgFuLRT9c3NEpLL04rMC9W4gXxDJNKyuONK7OTtaSyk630k_Lzs_UTS0sy8ousQOxihfy8nMpFrKGOCr6HF6ZnJicqpCQqOBYVleYmHl5-eHG-gq6CI5BfkqrglViQn5daDFSQquCcn5OfnFik4F-UkpqrkJeoEFyaqOCcCJRMhfHCMlMSd7AyAgAVVreUlgAAAA&sa=X&ved=2ahUKEwi9wvrhm_P_AhXxH7kGHTH5A20QgOQBegQIJhAE&biw=1366&bih=625&dpr=1#ip=1",
+      "pagina": "1",
+      "imagem": "https://m.media-amazon.com/images/I/91Bx5ilP+EL.jpg",
+      "totpagina": "320",
+      "link": "https://www.youtube.com/watch?v=fGrKuK3KsGY&ab_channel=CompanhiaDosTrechos-AudioLivros",
       "status": {
-        "id": "1",
-        "name": "Já vi"
+        "id": "3",
+        "name": "Ainda quero ver"
       },
-      "id": 7
-    },
-    {
-      "categoria": "Filme",
-      "subcategoria": "Super-Heroi",
-      "titulo": "Vingadores: Ultimato",
-      "imagem": "https://upload.wikimedia.org/wikipedia/pt/thumb/9/9b/Avengers_Endgame.jpg/250px-Avengers_Endgame.jpg",
-      "link": "https://amazflix.biz/filmes/assistir-vingadores-ultimato-dublado/",
-      "hora": "03:12",
-      "status": {
-        "id": "1",
-        "name": "Já vi"
-      },
-      "id": 8
+      "id": 5
     }
   ],
   "categorias": [

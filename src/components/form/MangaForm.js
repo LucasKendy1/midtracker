@@ -54,6 +54,8 @@ function MangaForm({handleSubmit, midiaData}){
             <Input type="text" text="Scan" name="scan" placeholder="Insira o nome da Scan"  handleOnChange={handleChange}/>
 
             <Input type="link" text="Link" name="link" placeholder="Insira o link do mangá"  handleOnChange={handleChange}/>
+            
+            <Input type="text" text="Link da Imagem do Banner" name="imagem" placeholder="Insira uma imagem da midia" handleOnChange={handleChange}/>
 
             <Select name="Status" text="Selecione o status" options={status} handleOnChange={handleSelect} value={midia.status ? midia.status.id : ''}/>
 

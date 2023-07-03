@@ -53,6 +53,8 @@ function handleSelect(e){
       <Input type="number" text="Total de páginas" name="totpagina" placeholder="Insira o total de paginas" handleOnChange={handleChange}/>
 
       <Input type="link" text="Link" name="link" placeholder="Insira o link do mangá" handleOnChange={handleChange}/>
+      
+      <Input type="text" text="Link da Imagem do Banner" name="imagem" placeholder="Insira uma imagem da midia" handleOnChange={handleChange}/>
 
       <Select name="Status" text="Selecione o status" options={status} handleOnChange={handleSelect} value={midia.status ? midia.status.id : ''}/>
 
