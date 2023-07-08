@@ -1,13 +1,17 @@
 import styles from './Cards.module.css'
 import {BsPencil, BsFillTrashFill} from 'react-icons/bs'
 import {useState} from 'react'
-import LinkButton from './LinkButton'
 import { Link } from 'react-router-dom'
 
-function Cards({ id, categoria, subcategoria, temporada, episodio,titulo, hora, min, link, status, capitulo, pagina, totpagina, scan, imagem, handleRemove}){
+function Cards({ id, categoria, subcategoria, temporada, episodio,titulo, hora, min, link, status, capitulo, pagina, totpagina, scan, imagem, handleRemove, idstatus}){
 
     const [category, setCategory] = useState(categoria)
     
+    const remove = (e) => {
+        e.preventDefault()
+        handleRemove(id)
+    }
+
     return(
         <div className={`${styles[categoria]}`}>
             {category=='Anime' &&(
@@ -39,10 +43,17 @@ function Cards({ id, categoria, subcategoria, temporada, episodio,titulo, hora, 
                     </div>
                     
                     <div className={styles.statusDiv}>
-                        <p>Status: {status}</p>
+                        <p><span className={`${styles[`status${idstatus}`]}`}></span>{status}</p>
                     </div>
-
                     
+                    <div className={styles.actions}>
+                        <Link to={`/midia/${id}`}>
+                            <BsPencil /> Editar
+                        </Link>
+                        <button onClick={remove}>
+                            <BsFillTrashFill /> Excluir
+                        </button>
+                    </div>
                 </div>
             )}
             {category=='Filme' &&(
@@ -70,10 +81,17 @@ function Cards({ id, categoria, subcategoria, temporada, episodio,titulo, hora, 
                     </div>
 
                     <div className={styles.statusDiv}>
-                        <p>Status: {status}</p>
+                        <p><span className={`${styles[`status${idstatus}`]}`}></span>{status}</p>
                     </div>
 
-                    
+                    <div className={styles.actions}>
+                        <Link to={`/midia/${id}`}>
+                            <BsPencil /> Editar
+                        </Link>
+                        <button onClick={remove}>
+                            <BsFillTrashFill /> Excluir
+                        </button>
+                    </div>
                 </div>
             )}
             {category=='Manga' &&(
@@ -101,10 +119,17 @@ function Cards({ id, categoria, subcategoria, temporada, episodio,titulo, hora, 
                     </div>
 
                     <div className={styles.statusDiv}>
-                        <p>Status: {status}</p>
+                        <p><span className={`${styles[`status${idstatus}`]}`}></span>{status}</p>
                     </div>
-
                     
+                    <div className={styles.actions}>
+                        <Link to={`/midia/${id}`}>
+                            <BsPencil /> Editar
+                        </Link>
+                        <button onClick={remove}>
+                            <BsFillTrashFill /> Excluir
+                        </button>
+                    </div>
                 </div>
             )}
             {category=='Serie' &&(
@@ -140,7 +165,16 @@ function Cards({ id, categoria, subcategoria, temporada, episodio,titulo, hora, 
                     </div>
 
                     <div className={styles.statusDiv}>
-                        <p>Status: {status}</p>
+                        <p><span className={`${styles[`status${idstatus}`]}`}></span>{status}</p>
+                    </div>
+
+                    <div className={styles.actions}>
+                        <Link to={`/midia/${id}`}>
+                            <BsPencil /> Editar
+                        </Link>
+                        <button onClick={remove}>
+                            <BsFillTrashFill /> Excluir
+                        </button>
                     </div>
                 </div>
             )}
@@ -173,7 +207,16 @@ function Cards({ id, categoria, subcategoria, temporada, episodio,titulo, hora, 
                     </div>
 
                     <div className={styles.statusDiv}>
-                        <p>Status: {status}</p>
+                        <p><span className={`${styles[`status${idstatus}`]}`}></span>{status}</p>
+                    </div>
+
+                    <div className={styles.actions}>
+                        <Link to={`/midia/${id}`}>
+                            <BsPencil /> Editar
+                        </Link>
+                        <button onClick={remove}>
+                            <BsFillTrashFill /> Excluir
+                        </button>
                     </div>
                 </div>
             )}

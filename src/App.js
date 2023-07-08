@@ -11,6 +11,7 @@ import Footer from './components/layout/Footer';
 import New from './components/pages/New';
 import {useState} from 'react';
 import styles from './App.module.css'
+import Midia from './components/pages/Midia';
 
 function App() {
   const [menu, setMenu] = useState(false)
@@ -37,6 +38,7 @@ function App() {
             <Route path='/animes'element={<Animes />} />
             <Route path='/mangas'element={<Mangas />} />
             <Route path='/filmes'element={<Filmes />} />
+            <Route path='/midia/:id'element={<Midia />} />
         </Routes>
        </Router>
        <Footer />
