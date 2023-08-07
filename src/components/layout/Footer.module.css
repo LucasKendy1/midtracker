@@ -32,3 +32,13 @@
     color: #2b59c3;
     cursor: pointer;
 }
+
+.a{
+    text-decoration: none;
+    color: white;
+    transition: .4s;
+}
+
+.a:hover{
+    color: #2b59c3;
+}

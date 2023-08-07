@@ -42,7 +42,6 @@ function Home(){
         })
         .catch(err => console.log(err))
     }
-
     return (
 
         <section className={styles.home_container}>

@@ -46,7 +46,7 @@ function Cards({ id, categoria, subcategoria, temporada, episodio,titulo, hora, 
                         <p><span className={`${styles[`status${idstatus}`]}`}></span>{status}</p>
                     </div>
                     
-                    <div className={styles.actions}>
+                    <div className={styles.actionsAnime}>
                         <Link to={`/midia/${id}`}>
                             <BsPencil /> Editar
                         </Link>
@@ -84,7 +84,7 @@ function Cards({ id, categoria, subcategoria, temporada, episodio,titulo, hora, 
                         <p><span className={`${styles[`status${idstatus}`]}`}></span>{status}</p>
                     </div>
 
-                    <div className={styles.actions}>
+                    <div className={styles.actionsSerie}>
                         <Link to={`/midia/${id}`}>
                             <BsPencil /> Editar
                         </Link>
@@ -122,7 +122,7 @@ function Cards({ id, categoria, subcategoria, temporada, episodio,titulo, hora, 
                         <p><span className={`${styles[`status${idstatus}`]}`}></span>{status}</p>
                     </div>
                     
-                    <div className={styles.actions}>
+                    <div className={styles.actionsManga}>
                         <Link to={`/midia/${id}`}>
                             <BsPencil /> Editar
                         </Link>
@@ -168,7 +168,7 @@ function Cards({ id, categoria, subcategoria, temporada, episodio,titulo, hora, 
                         <p><span className={`${styles[`status${idstatus}`]}`}></span>{status}</p>
                     </div>
 
-                    <div className={styles.actions}>
+                    <div className={styles.actionsSerie}>
                         <Link to={`/midia/${id}`}>
                             <BsPencil /> Editar
                         </Link>
@@ -210,7 +210,7 @@ function Cards({ id, categoria, subcategoria, temporada, episodio,titulo, hora, 
                         <p><span className={`${styles[`status${idstatus}`]}`}></span>{status}</p>
                     </div>
 
-                    <div className={styles.actions}>
+                    <div className={styles.actionsAnime}>
                         <Link to={`/midia/${id}`}>
                             <BsPencil /> Editar
                         </Link>

@@ -39,7 +39,7 @@
 .mainDiv{
     border-radius: 10px;
     width: 250px;
-    min-height: 550px;
+    height: 600px;
     flex-wrap: wrap;
 }
 .imageDiv{
@@ -115,16 +115,31 @@ img{
 .status3{
     background-color: rgba(255, 0, 0, 0.562);
 }
-.actions{
+.actionsSerie{
     width: 100%;
     height: 50px;
-    margin-top: 20px;
-    margin-bottom: 20px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 10px;
 }
-.actions a{
+.actionsManga{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 90px;
+}
+.actionsAnime{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+.actionsSerie a {
     text-decoration: none;
     border: none;
     background-color: rgba(255, 255, 255, 0.74);
@@ -134,7 +149,27 @@ img{
     cursor: pointer;
     transition: .5s;
 }
-.actions button{
+.actionsManga a {
+    text-decoration: none;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.74);
+    padding: 10px;
+    border-radius: 5px;
+    color:rgb(0, 0, 0);
+    cursor: pointer;
+    transition: .5s;
+}
+.actionsAnime a {
+    text-decoration: none;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.74);
+    padding: 10px;
+    border-radius: 5px;
+    color:rgb(0, 0, 0);
+    cursor: pointer;
+    transition: .5s;
+}
+.actionsSerie button{
     border: none;
     background-color: rgba(255, 1, 1, 0.651);
     padding: 13px;
@@ -143,10 +178,42 @@ img{
     cursor: pointer;
     transition: .5s;
 }
-.actions a:hover{
+.actionsManga button{
+    border: none;
+    background-color: rgba(255, 1, 1, 0.651);
+    padding: 13px;
+    border-radius: 5px;
+    color:white;
+    cursor: pointer;
+    transition: .5s;
+}
+.actionsAnime button{
+    border: none;
+    background-color: rgba(255, 1, 1, 0.651);
+    padding: 13px;
+    border-radius: 5px;
+    color:white;
+    cursor: pointer;
+    transition: .5s;
+}
+.actionsSerie a:hover{
     background-color: #1e1e1e;
     color: white;
 }
-.actions button:hover{
+.actionsManga a:hover{
+    background-color: #1e1e1e;
+    color: white;
+}
+.actionsAnime a:hover{
+    background-color: #1e1e1e;
+    color: white;
+}
+.actionsSerie button:hover{
+    background-color: #1e1e1e;
+}
+.actionsAnime button:hover{
+    background-color: #1e1e1e;
+}
+.actionsManga button:hover{
     background-color: #1e1e1e;
 }

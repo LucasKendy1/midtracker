@@ -62,19 +62,19 @@ function New(){
             <Select name="categoria" text="Selecione a categoria" options={categorias} handleOnChange={handleSelect} value={categorias.name}/>
             
             {selectValue == 1 && (
-               <FilmesForm handleSubmit={createPost}/> 
+               <FilmesForm handleSubmit={createPost} btnText={"Enviar"}/> 
             )}
             {selectValue == 2 && (
-               <AnimeForm handleSubmit={createPost}/>
+               <AnimeForm handleSubmit={createPost} btnText={"Enviar"}/>
             )}
             {selectValue == 3 && (
-               <SerieForm handleSubmit={createPost}/>
+               <SerieForm handleSubmit={createPost} btnText={"Enviar"}/>
             )}
             {selectValue == 4 && (
-               <MangaForm handleSubmit={createPost}/>
+               <MangaForm handleSubmit={createPost} btnText={"Enviar"}/>
             )}
             {selectValue == 5 && (
-               <LivroForm handleSubmit={createPost}/>
+               <LivroForm handleSubmit={createPost} btnText={"Enviar"}/>
             )}
 
         </section>

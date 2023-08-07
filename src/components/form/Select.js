@@ -6,18 +6,21 @@ function Select({ text, name, options, handleOnChange, value, }){
     //     const indice = event.target.value
     //     onSelecao(indice)
     // }
-
+    console.log(options)
     return(
         <div className={style.input}>
             <label className={style.label} htmlFor={name}>{text}:</label>
             <select name={name} id={name} className={style.inputtext} onChange={handleOnChange} value={value}>
-                <option disabled>Selecione uma opção</option>
-                {options.map((options) => (
-                    <option value={options.id} key={options.id}>{options.name}</option>
+                <option disabled>
+                    Selecione uma opção
+                </option>
+                
+                {options.map((option) => (
+                    <option 
+                    value={option.id} key={option.id}>{option.name}
+                    </option>
                 ))}
             </select>
-            
-
         </div>
     )
 }

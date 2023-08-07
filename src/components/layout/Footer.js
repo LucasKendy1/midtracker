@@ -11,9 +11,21 @@ function Footer(){
                 2023 &copy; MidTracker
             </p>
             <ul className={styles.lista}>
-                <li className={styles.item_lista}><FaInstagram /></li>
-                <li className={styles.item_lista}><FaLinkedin /></li>
-                <li className={styles.item_lista}><FaGithub /></li>
+                <li className={styles.item_lista}>
+                    <a className={styles.a} href="https://www.instagram.com/lucaskendy2/" target='blank'>
+                        <FaInstagram />
+                    </a>
+                </li>
+                <li className={styles.item_lista}>
+                    <a className={styles.a} href="https://www.linkedin.com/in/lucas-kendy-28931a196/" target='blank'>
+                        <FaLinkedin />
+                    </a>
+                </li>
+                <li className={styles.item_lista}>
+                    <a className={styles.a} href="https://github.com/LucasKendy1" target='blank'>
+                        <FaGithub />
+                    </a>
+                </li>
             </ul>
         </footer>
     )

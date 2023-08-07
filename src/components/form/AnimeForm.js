@@ -3,7 +3,7 @@ import Select from './Select'
 import {useEffect, useState} from 'react'
 import SubmitButton from '../form/SubmitButton'
 
-function AnimeForm({handleSubmit, midiaData}){
+function AnimeForm({handleSubmit, midiaData, btnText}){
     const [status, setStatus] = useState([])
     const [midia, setMidia] = useState (midiaData || {
         categoria: 'Anime'
@@ -45,20 +45,21 @@ function AnimeForm({handleSubmit, midiaData}){
 
     return(
         <form onSubmit={submit}>
-            <Input type="text" text="Titulo" name="titulo" placeholder="Insira o Titulo do anime" handleOnChange={handleChange}/>
+            <Input type="text" text="Titulo" name="titulo" placeholder="Insira o Titulo do anime" handleOnChange={handleChange} value={midia.titulo}/>
 
-            <Input type="number" text="Temporada" name="temporada" placeholder="Insira a temporada do anime" handleOnChange={handleChange}/>
+            <Input type="number" text="Temporada" name="temporada" placeholder="Insira a temporada do anime" handleOnChange={handleChange} value={midia.temporada}/>
 
-            <Input type="number" text="Episódio" name="episodio" placeholder="Insira o episódio do anime" handleOnChange={handleChange}/>
+            <Input type="number" text="Episódio" name="episodio" placeholder="Insira o episódio do anime" handleOnChange={handleChange} value={midia.episodio}/>
 
-            <Input type="time" text="Min" name="min" handleOnChange={handleChange}/>
+            <Input type="time" text="Min" name="min" handleOnChange={handleChange} value={midia.min}/>
 
-            <Input type="link" text="Link" name="link" placeholder="Insira o link do anime" handleOnChange={handleChange}/>
+            <Input type="link" text="Link" name="link" placeholder="Insira o link do anime" handleOnChange={handleChange} value={midia.link}/>
 
-            <Input type="text" text="Link da Imagem do Banner" name="imagem" placeholder="Insira uma imagem da midia" handleOnChange={handleChange}/>
+            <Input type="text" text="Link da Imagem do Banner" name="imagem" placeholder="Insira uma imagem da midia" handleOnChange={handleChange} value={midia.imagem}/>
             
             <Select name="Status" text="Selecione o status" options={status} handleOnChange={handleSelect} value={midia.status ? midia.status.id : ''}/>
-            <SubmitButton text="Enviar"/>
+            
+            <SubmitButton text={btnText}/>
         </form>
     )
 }
