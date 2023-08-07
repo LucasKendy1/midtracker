@@ -17,7 +17,7 @@ function Midia(){
     const [midias,setMidias] = useState([])
     const [message, setMidiaMessage]= useState()
     const navigate = useNavigate()
-    
+
     console.log(midia)
 
     useEffect(() => {
