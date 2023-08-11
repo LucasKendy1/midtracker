@@ -10,7 +10,7 @@ function MangaForm({ handleSubmit, midiaData, btnText }) {
   });
 
   useEffect(() => {
-    fetch("http://localhost:5000/status", {
+    fetch("https://mid-tracker-ee3a62f7719c.herokuapp.com/status", {
       method: "GET",
       headers: {
         'Content-Type': 'application/json',

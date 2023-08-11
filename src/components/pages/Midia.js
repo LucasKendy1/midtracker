@@ -21,7 +21,7 @@ function Midia(){
     console.log(midia)
 
     useEffect(() => {
-        fetch(`http://localhost:5000/midias/${id}`,{
+        fetch(`https://mid-tracker-ee3a62f7719c.herokuapp.com/midias/${id}`,{
             method:'GET',
             headers:{
                 'Content-Type':'application/json',
@@ -38,7 +38,7 @@ function Midia(){
     }
 
     function editPost(midia){
-        fetch(`http://localhost:5000/midias/${midia.id}`,{
+        fetch(`https://mid-tracker-ee3a62f7719c.herokuapp.com/midias/${midia.id}`,{
             method:'PATCH',
             headers:{
                 'Content-Type':'application/json',

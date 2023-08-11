@@ -15,7 +15,7 @@ function Home(){
     const [midias, setMidias] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/midias',{
+        fetch('https://mid-tracker-ee3a62f7719c.herokuapp.com/midias',{
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
@@ -30,7 +30,7 @@ function Home(){
     },[])
 
     function removeMidia(id){
-        fetch(`http://localhost:5000/midias/${id}`,{
+        fetch(`https://mid-tracker-ee3a62f7719c.herokuapp.com/midias/${id}`,{
             method:'DELETE',
             headers:{
                 'Content-Type': 'application/json'

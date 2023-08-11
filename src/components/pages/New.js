@@ -22,7 +22,7 @@ function New(){
     }
 
     function createPost(midia){
-        fetch("http://localhost:5000/midias",{
+        fetch("https://mid-tracker-ee3a62f7719c.herokuapp.com/midias",{
             method: 'POST',
             headers:{
                 'Content-type': 'application/json',
