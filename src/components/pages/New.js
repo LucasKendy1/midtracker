@@ -13,7 +13,7 @@ function New(){
     
     const [categorias, setCategorias] = useState([])
    
-    const [selectValue, setSelectValue] = useState(1);
+    const [selectValue, setSelectValue] = useState(0);
 
     const navigate = useNavigate()
 
@@ -27,19 +27,18 @@ function New(){
             headers:{
                 'Content-type': 'application/json',
             },    
-            body: JSON.stringify(midia),
-        })
-        .then((resp) => resp.json())
+            body: JSON.stringify(midia)
+        }).then((
+            resp => resp.json())
         .then((data) => {
             console.log(data)
-
-            navigate('/', { state: { message: 'Midia criada com sucesso!'}})
+            //redirect
         })
-        .catch((err) => console.log(err))
+        ).catch(err => console.log(err))
     }
 
     useEffect(() => {
-        fetch("http://localhost:5000/categorias",{
+        fetch("https://mid-tracker-ee3a62f7719c.herokuapp.com/categorias",{
         method: "GET",
         headers:{
             'Content-Type': 'application/json',
