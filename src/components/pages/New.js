@@ -32,7 +32,7 @@ function New(){
             resp => resp.json())
         .then((data) => {
             console.log(data)
-            navigate('/', { state: { message: 'Midia criada com sucesso!'}})
+            navigate('/', { state: { message: 'Midia criada com sucesso :>!'}})
         })
         ).catch(err => console.log(err))
     }
