@@ -22,7 +22,7 @@ function New(){
     }
 
     function createPost(midia){
-        fetch("https://midtracker-d6b51-default-rtdb.firebaseio.com/midias",{
+        fetch("https://king-prawn-app-xjbhu.ondigitalocean.app/midias",{
             method: 'POST',
             headers:{
                 'Content-type': 'application/json',

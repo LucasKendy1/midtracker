@@ -21,7 +21,7 @@ function Midia(){
     console.log(midia)
 
     useEffect(() => {
-        fetch(`https://midtracker-d6b51-default-rtdb.firebaseio.com/midias/${id}`,{
+        fetch(`https://king-prawn-app-xjbhu.ondigitalocean.app/midias/${id}`,{
             method:'GET',
             headers:{
                 'Content-Type':'application/json',
@@ -38,7 +38,7 @@ function Midia(){
     }
 
     function editPost(midia){
-        fetch(`https://midtracker-d6b51-default-rtdb.firebaseio.com/midias/${midia.id}`,{
+        fetch(`https://king-prawn-app-xjbhu.ondigitalocean.app/midias/${midia.id}`,{
             method:'PATCH',
             headers:{
                 'Content-Type':'application/json',
@@ -53,7 +53,7 @@ function Midia(){
     }
 
     function removeMidia(id){
-        fetch(`https://midtracker-d6b51-default-rtdb.firebaseio.com/midias/${midia.id}`,{
+        fetch(`https://king-prawn-app-xjbhu.ondigitalocean.app/midias/${midia.id}`,{
             method:'DELETE',
             headers:{
                 'Content-Type': 'application/json'

@@ -15,7 +15,7 @@ function Home(){
     const [midias, setMidias] = useState([])
 
     useEffect(() => {
-        fetch('https://midtracker-d6b51-default-rtdb.firebaseio.com/midias',{
+        fetch('https://king-prawn-app-xjbhu.ondigitalocean.app/midias',{
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
@@ -30,7 +30,7 @@ function Home(){
     },[])
 
     function removeMidia(id){
-        fetch(`https://midtracker-d6b51-default-rtdb.firebaseio.com/midias/${id}`,{
+        fetch(`https://king-prawn-app-xjbhu.ondigitalocean.app/midias/${id}`,{
             method:'DELETE',
             headers:{
                 'Content-Type': 'application/json'
