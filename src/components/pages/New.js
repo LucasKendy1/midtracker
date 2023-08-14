@@ -22,7 +22,7 @@ function New(){
     }
 
     function createPost(midia){
-        fetch("https://mid-tracker-ee3a62f7719c.herokuapp.com/midias",{
+        fetch("https://midtracker-d6b51-default-rtdb.firebaseio.com/midias",{
             method: 'POST',
             headers:{
                 'Content-type': 'application/json',

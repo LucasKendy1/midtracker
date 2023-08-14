@@ -21,7 +21,7 @@ function Midia(){
     console.log(midia)
 
     useEffect(() => {
-        fetch(`https://mid-tracker-ee3a62f7719c.herokuapp.com/midias/${id}`,{
+        fetch(`https://midtracker-d6b51-default-rtdb.firebaseio.com/midias/${id}`,{
             method:'GET',
             headers:{
                 'Content-Type':'application/json',
@@ -38,7 +38,7 @@ function Midia(){
     }
 
     function editPost(midia){
-        fetch(`https://mid-tracker-ee3a62f7719c.herokuapp.com/midias/${midia.id}`,{
+        fetch(`https://midtracker-d6b51-default-rtdb.firebaseio.com/midias/${midia.id}`,{
             method:'PATCH',
             headers:{
                 'Content-Type':'application/json',
@@ -53,7 +53,7 @@ function Midia(){
     }
 
     function removeMidia(id){
-        fetch(`http://localhost:5000/midias/${midia.id}`,{
+        fetch(`https://midtracker-d6b51-default-rtdb.firebaseio.com/midias/${midia.id}`,{
             method:'DELETE',
             headers:{
                 'Content-Type': 'application/json'

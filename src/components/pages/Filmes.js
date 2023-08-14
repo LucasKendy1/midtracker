@@ -7,7 +7,7 @@ function Filmes(){
     const [midias, setMidias] = useState([])
     const [midiaMessage, setMidiaMessage] = useState('')
     useEffect(() => {
-        fetch('https://mid-tracker-ee3a62f7719c.herokuapp.com/midias',{
+        fetch('https://midtracker-d6b51-default-rtdb.firebaseio.com/midias',{
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
@@ -22,7 +22,7 @@ function Filmes(){
     },[])
 
     function removeMidia(id){
-        fetch(`https://mid-tracker-ee3a62f7719c.herokuapp.com/midias/${id}`,{
+        fetch(`https://midtracker-d6b51-default-rtdb.firebaseio.com/midias/${id}`,{
             method:'DELETE',
             headers:{
                 'Content-Type': 'application/json'
